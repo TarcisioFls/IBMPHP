@@ -17,7 +17,7 @@ and open the template in the editor.
         <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
-        <form method="POST" action="conexao.php">
+        <form method="POST" action="cadastroMembro.php">
             <section class="container-fluid">
                 <h3>Dados Pessoais</h3>
                 <div class="panel panel-default">
@@ -78,7 +78,7 @@ and open the template in the editor.
                                 <select name="sexo" id="sexo" required="required" class="form-control">
                                     <option value="" label=""></option>
                                     <option value="Feminino" label="Feminino"></option>
-                                    <option value="Masculino" label="Maasculino"></option>
+                                    <option value="Masculino" label="Masculino"></option>
                                 </select>
                             </td>
                         </tr>
@@ -222,7 +222,10 @@ and open the template in the editor.
                     <div  class="panel panel-default">
                     <table class="table-condensed">
                         <tr>
-                            Imagem do Membro
+                        <label for="imagem"> Imagem do Membro </label>
+                        </tr>
+                        <tr>
+                        <input type="file" id="imagem">
                         </tr>
                         <tr>
                             <td>
