@@ -19,7 +19,7 @@ and open the template in the editor.
     </head>
     <body>
         <section class="container-fluid">
-            <form method="POST" action="conexao.php">
+            <form method="POST" action="cadastroEvento.php">
                 <h3>Cadastros de Eventos</h3>
                 <div class="panel panel-default">
                     <table class="table-condensed">
