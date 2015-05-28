@@ -4,8 +4,7 @@
     
     ini_set('default_charset','UTF-8');
     
-    $conn = mysqli_connect('localhost', 'root', '', 'ibm2', 3306);
+    $conn = mysqli_connect('localhost', 'root', '', 'ibm', 3306);
     if (!$conn) {
         die('Não foi possivel Conectar: ' .mysqli_error());
     }
-?>

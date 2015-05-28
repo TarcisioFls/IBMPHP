@@ -40,7 +40,7 @@ and open the template in the editor.
                                     <li role="presentation" ><a href="./eventos.php">Eventos</a>
                                 </ul>
                             </li>                                
-                            <li role="presentation" class="#"><a href="./buscarMembro.php">Relatório</a></li>
+                            <li role="presentation" class="#"><a href="./relatorio.php">Relatório</a></li>
                         </ul>
                         <div class="navbar-form navbar-right" role="button">
                             <div class="form-group">
@@ -74,7 +74,9 @@ and open the template in the editor.
                                                 </td>
                                             </tr>
                                         </table>
+                                        <a href="senha.php"><span>Esqueceu sua senha?</span></a>
                                     </div>
+                                    
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                                         <button type="button" class="btn btn-primary">Logar</button>
@@ -84,7 +86,7 @@ and open the template in the editor.
                         </div>
                     </div>
                 </div>
-            </nav>
+            </nav>            
         </section>    
         
     </body>

@@ -72,8 +72,7 @@ and open the template in the editor.
                       </a>
                     </div>
                 </div>
-
-            </section>>
+            
         </section>
         <?php
         // put your code here
