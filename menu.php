@@ -40,7 +40,7 @@ and open the template in the editor.
                                     <li role="presentation" ><a href="./eventos.php">Eventos</a>
                                 </ul>
                             </li>                                
-                            <li role="presentation" class="#"><a href="./relatorio.php">Relatório</a></li>
+                            <li role="presentation" class="#"><a href="./relatorio.php">Busca</a></li>
                         </ul>
                         <div class="navbar-form navbar-right" role="button">
                             <div class="form-group">

@@ -17,7 +17,7 @@ and open the template in the editor.
         <script src="js/bootstrap.min.js"></script>
     </head>
     <body>        
-        <form method="POST" action="busca.php">
+        <form method="POST" action="buscarMembro.php">
             <section class="container-fluid">
                 <h3>Busca</h3>
                 <div class="panel panel-default">
@@ -30,7 +30,7 @@ and open the template in the editor.
                                 <input type="text" name="nome" id="nome"  class="form-control">
                             </td>
                         </tr>
-                        <tr>
+<!--                        <tr>
                             <td>
                                 <label for="dataNascimentoIni">Data de Nascimento</label>
                             </td>
@@ -186,14 +186,13 @@ and open the template in the editor.
                                     <option value="Pastor" label="Pastor"></option>                                    
                                 </select>
                             </td>
-                        </tr>                            
+                        </tr>   
+-->                            
                     </table>
                 </div>
                 <input type="submit" value="Buscar" class="btn">
                 <input type="reset" value="Limpar" class="btn">
             </section>
-        </form>
+        </form>        
     </body>
 </html>
-
-
