@@ -20,7 +20,7 @@ and open the template in the editor.
             <br/>
             <a href="index.php" <span>Pagina Inicial</span></a> -> <a href="relatorio.php" <span>Busca</span></a>
             <h3>Resultado da Busca</h3>
-            <form method="POST" action="">
+            <form method="POST" action="atualizarMembro.php">
                 <div class="panel panel-default">
                     <table class="table table-bordered table-hover" title="Resultado da Busca">
                     <thead>
@@ -77,9 +77,9 @@ and open the template in the editor.
                     </tbody>
                 </table>
                 </div>
-            </form>
-            <input type="submit" class="btn" value="Atualizar">
-            <input type="reset" class="btn" value="Limpar">
+                <input type="submit" class="btn" value="Atualizar">
+                <input type="reset" class="btn" value="Limpar">
+            </form>            
         </section>    
     </body>
 </html>
