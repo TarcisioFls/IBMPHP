@@ -51,3 +51,281 @@ and open the template in the editor.
 #alinhar{
     margin-left: 150px;
 }
+
+/*css do mapa*/
+a.link:link, a:visited {
+	text-decoration: none;
+
+	}
+.mapa{
+	width: 100%;
+	
+        text-align: center;
+        font-size: 15px;
+}        
+#lado1{
+	float: left;
+	width: 33%;
+        height: 150px;
+        margin-top: 20px;
+}
+#lado2{
+	float: left;
+	width: 33%;
+
+}
+#lado3{
+	float: right;
+	width: 34%;
+
+        margin-top: 20px;
+}
+/*footer*/
+/* footer */
+#footer { 
+	clear: both; 
+	color: #999; 
+	background: background-color:#003D99;
+	font-size: .9em;
+}
+#footerbg {
+	padding: 35px 0 15px 0;
+	background: url(../images/footer.jpg) no-repeat center top;
+}
+#footer p { 
+	margin: 0 0 12px;
+	padding: 6px 0;
+}
+#footer_menu {
+	float: right;
+	padding: 4px 0 0;
+}
+#footer a { 
+	color: #999; 
+	margin: 0 5px 0 0; 
+	padding: 6px 10px;
+	background: url(../images/dot.png) no-repeat left center; 
+	border: 1px solid transparent;
+}
+#footer a:hover {
+	border-color: #555;
+}
+#fleft {
+	clear: both;
+	padding: 25px 0 0;
+	font-size: .94em;
+}
+
+#copy { 
+	color: #777; 
+	font-size: 1.5em;
+	text-align: center;
+}
+#copy span { 
+	color: #999; 
+}
+#footer { 
+	clear: both; 
+	color: #999; 
+	background-color: #003D99;
+	font-size: .9em;
+}
+#footerbg {
+	padding: 35px 0 15px 0;
+	
+} 
+.RODAPÉ{text-align: center;
+		color: #FFFFFF;
+		font-size: 1.5em;
+		}
+
+.RODAPÉ1{text-align: center;
+		color: #FFFFFF;
+		font-size: 1.5em;}
+.nossaEmpresa{text-align:right;
+                color:#FFFFFF;
+                margin-right: 150px;}
+
+/*css corpo do index*/
+body{
+	font-family: verdana;
+}
+
+#c{
+	background-color: #4F94CD;
+	float: left;
+	height: 100%;
+	width: 10%;
+}
+
+#informacoes{
+	float: right;
+	background-color: #003D99;
+	height: 100%;
+	width: 30%;
+	
+}
+
+#corpoSite{
+	
+	float: right;
+	height: 100%;
+	width: 55%;
+}
+#Propaganda{
+	background-color: #003D99;
+	float: right;
+	height: 100%;
+	width:15%;
+	color:#000000;
+}
+
+#e{
+	background-color:#87CEFF;
+
+}
+
+#total{
+	height: 100%;
+}
+
+#h{
+	background-color: gray;
+	width: 20%;
+	height: 150px;
+	float: left;
+	
+}
+
+#i{
+	background-color: purple;
+	width: 80%;
+	float: right;
+	height: 150px;
+
+}
+#frame{
+	background-color: gold;
+	height: 350px;
+	width: 100%;
+}
+
+#nome{
+	font-family: verdana;
+	font-size: 20px;
+	}
+	
+.video{
+    display: block;
+    margin-right: auto;
+	text-align: center;
+	}
+.h4{
+	text-align: center;
+	color:#000000;
+	font:arial;
+	font-size:20px
+
+}
+
+.DiaCulto_h6{
+	color:#000000;
+	font:arial;
+	font-size:18px;
+	text-align: center;
+}
+.DiaCulto_h5 {
+	font:arial;
+	color:#000000;
+	font-size:18px;
+	text-align: center;
+}
+.Downloads_P{
+	font:arial;
+	color:#000000;
+	font-size:18px;
+	text-align: center;
+}
+.Noticias_P{
+font:arial;
+	color:#000000;
+	font-size:18px;
+	text-align: center;
+}
+bitis_p{font:arial;
+	color:#000000;
+	font-size:18px;
+	text-align: center;
+}
+
+.historia{
+    font-size: 15px;
+    text-align: center;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+/* css novo do index*/
+body{
+		width: 100%;
+		font-family: arial;
+	}
+	.prop{
+		float: left;
+		width: 20%;
+	}
+	
+	.evento{
+		float: left;
+		width: 100%;
+	}
+	.corposite{
+		width: 80%;
+		float: right;
+	}
+	.video{
+		width: 100%;
+	}
+	#ultimovideo{
+		float: right;
+		width: 50%;
+	}
+	#primeirovideo{
+		float: left;
+		width: 50%;
+	}
+	.nhd{
+		width: 100%;
+
+	}
+	.horariodoculto{
+		width: 33%;
+		float: left;
+		height: 350px;
+	}
+	.noticias{
+		width: 33%;
+		float: left;
+		height: 350px;
+	}
+	.downloads{
+		width: 34%;
+		float: left;
+		height: 350px;
+	}
+	.projetos{
+		width: 100%;
+	}
+	.projeto1{
+		width: 33%;
+		float: left;
+	}
+	.projeto2{
+		width: 33%;
+		float: left;
+	}
+	.projeto3{
+		width: 34%;
+		float: left;
+	}
+/* fim css novo do index*/
