@@ -73,15 +73,15 @@ and open the template in the editor.
                       </a>
                 <div> <!--div total-->
 	<div class="prop"><!--div propaganda-->
-	<div><img src="img/thumb3.png" alt="Thumb" width="171px" height="400"/></div>
-	<div><img src="img/thumb3.png" alt="Thumb" width="171px" height="400"/></div>
+            <div><img src="img/propaganda1.jpg" alt="Thumb" width="171px" height="400"/></div>
+            <div><img src="img/propaganda2.jpg" alt="Thumb" width="171px" height="400"/></div>
 	</div>
 	<div class="corposite"> <!--div corpo do site-->
 		
 	
 	<div class="evento"><!--div eventos-->
 		<div class="container">
-  <h2>Eventos do Mês</h2>
+                    <div id="divimage"><h2>Eventos</h2></div>
  
   <ul class="nav nav-tabs">
     <li><a data-toggle="tab" href="#menu12">JAN</a></li>
@@ -101,56 +101,69 @@ and open the template in the editor.
 
   <div class="tab-content">
     <div id="menu12" class="tab-pane fade">
-      <h3>JANEIRO</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h3>Eventos do Mês de Janeiro</h3>
+      <h4>Aniversariantes do Mês</h4>
+      <div><img src="img/thumb1.png" alt="Thumb" width="400px" height="250"/></div>
+      <div>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          </button></div>
+        <p>Comemoraremos o aniversário de todos os membros que completam primaveras no mês de Janeiro.</p>
     </div>
     <div id="menu1" class="tab-pane fade">
       <h3>FEVEREIRO</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
     </div>
     <div id="menu2" class="tab-pane fade">
       <h3>MARÇO</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
     </div>
     <div id="menu3" class="tab-pane fade">
       <h3>ABRIL</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
     </div>
     <div id="menu4" class="tab-pane fade">
       <h3>MAIO</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
     </div>
     <div id="menu5" class="tab-pane fade">
       <h3>JUNHO</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
     </div>
     <div id="menu6" class="tab-pane fade">
       <h3>JULHO</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
     </div>
     <div id="menu7" class="tab-pane fade">
       <h3>MARÇO</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
     </div>
     <div id="menu8" class="tab-pane fade">
       <h3>ABRIL</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+     <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
     </div>
     <div id="menu9" class="tab-pane fade">
       <h3>MAIO</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
     </div>
     <div id="menu10" class="tab-pane fade">
       <h3>JUNHO</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
     </div>
     <div id="menu11" class="tab-pane fade">
       <h3>MAIO</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
     </div>
    </div>
 </div>
 	</div>
+
 	<div><!--div videos-->
 		<div class="video">
                 <h4 class="h4">Videos</h4>
@@ -170,27 +183,27 @@ and open the template in the editor.
 			
 					<div class="horariodoculto"> <!--div horário do culto-->
 						<h4 class="h4">Hórario dos Cultos</h4>
-						</br>
-					
 						<p> 
-						<h6 class="DiaCulto_h6">Domingo:</h6>
-						<h5 class="DiaCulto_h6">09:00hs – EBD</br> 19:00hs – Culto de Adoração</h5>
-						<h6 class="DiaCulto_h6">Terça:</h6>
-						<h5 class="DiaCulto_h5">15:00hs - Culto Espitual</h5>
-						<h6 class="DiaCulto_h6">Quarta:</h6>
-						<h5 class="DiaCulto_h5">19:00hs – Culto de Oração</h5>
-						<h6 class="DiaCulto_h6">Quinta:</h6>
-						<h5 class="DiaCulto_h5">15:00hs - Culto da 3ªIdade</h5>
-						<h6 class="DiaCulto_h6">Sábado:</h6>
-						<h5 class="DiaCulto_h5">15:00hs - Culto Infantil</br>19:oohs – Culto de Jovem</h5>
+                                                <h4>Domingo:</h4>
+						09:00hs – EBD</br>
+                                                19:00hs – Culto de Adoração</br>
+                                                <h4>Terça:</h4>
+                                                15:00hs - Culto Espitual</br>
+                                                <h4>Quarta:</h4>
+                                                19:00hs – Culto de Oração</br>
+                                                <h4>Quinta:</h4>
+                                                15:00hs - Culto da 3ªIdade</br>
+                                                <h4>Sábado:</h4>
+						15:00hs - Culto Infantil</br>
+                                                19:oohs – Culto de Jovem
 						</p>
 					</div>  <!--fim div horário do culto-->
 				
 					<div class="downloads"> <!--div downloads-->
 						<h4 class="h4">Downloads</h4>
 						
-                        <a href="#" class="link">Boletim </a><br/><br/>
-                        <a href="#" class="link">Músicas</a></p>
+                                                <a href="#" class="link">Boletim </a><br/>
+                                                <a href="#" class="link">Músicas</a></p>
 						
 					</div> <!--fim div downloads-->
 				

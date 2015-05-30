@@ -24,7 +24,9 @@ and open the template in the editor.
         <br/>
         <a href="index.php" <span>Pagina Inicial</span></a>    
             <div class="nossahistoria">
-                <h2 id="nh">Nossa História</h2> </br>
+ 
+                    <h2 id="nh">Nossa História</h2> </br>
+                
                 <p id="texto">Somos um povo que vem de longe, com muitos nomes, de muitas perseguições, de muitas lutas, mas construindo uma bela história de fé, de doutrina e de princípios.</br>
                     Você os conhecerá nos conteúdos dos documentos que disponibilizamos neste Portal.</br>
 
@@ -56,7 +58,10 @@ and open the template in the editor.
         </section>>
         <?php
         // put your code here
-        
+        include_once 'mapasite.php';
         ?>
     </body>
 </html>
+<?php
+        include_once 'footer.php';
+        ?>
