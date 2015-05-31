@@ -16,7 +16,7 @@ and open the template in the editor.
  }
  
  .nossahistoria{
-     margin-top: 50px;
+     margin-top: 20px;
  }
 .nossahistoria{
     
@@ -55,6 +55,7 @@ and open the template in the editor.
 /*css do mapa*/
 a.link:link, a:visited {
 	text-decoration: none;
+        text-align: center;
 
 	}
 .mapa{
@@ -289,10 +290,12 @@ body{
 	#ultimovideo{
 		float: right;
 		width: 50%;
+                margin-top: 10px;
 	}
 	#primeirovideo{
 		float: left;
 		width: 50%;
+                margin-top: 30px;
 	}
 	.nhd{
 		width: 100%;
@@ -329,3 +332,12 @@ body{
 		float: left;
 	}
 /* fim css novo do index*/
+
+/*css vidisão do index*/
+.divisao{
+    background-color: blue;
+    width: 100%;
+    height: 10px;
+
+}
+

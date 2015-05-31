@@ -12,12 +12,19 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/jquery-2.1.3.js"></script>
 <!--        <script src="../js/bootstrap.min.js"></script>       -->
+        <style>
+            #textohome{
+                color: white;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <section>
             <!-- Logo -->
             <div class="nav navbar-default">
                 <a href="index.php"> <img src="img/logo_igreja.png" alt="logo" height="170" class="nav navbar-nav"> </a>
+                <h1 id="textohome">1ª Igreja Batista em Muribeca</h1>
             </div>
             <!-- Menu -->
             <nav class="navbar-default">
