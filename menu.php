@@ -17,11 +17,13 @@ and open the template in the editor.
                 color: white;
                 text-align: center;
             }
+           
         </style>
     </head>
     <body>
         <section>
             <!-- Logo -->
+            <div></div>
             <div class="nav navbar-default">
                 <a href="index.php"> <img src="img/logo_igreja.png" alt="logo" height="170" class="nav navbar-nav"> </a>
                 <h1 id="textohome">1ª Igreja Batista em Muribeca</h1>
@@ -29,6 +31,9 @@ and open the template in the editor.
             <!-- Menu -->
             <nav class="navbar-default">
                 <div class="container-fluid">
+                    
+             
+                    
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li role="presentation" class="#"><a href="index.php">Pagina Inicial</a></li>
@@ -92,6 +97,9 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
+                    
+  
+                    
                 </div>
             </nav>            
         </section>    
