@@ -299,6 +299,7 @@ and open the template in the editor.
     
     ini_set('default_charset','UTF-8');
     
+        
     $nome = isset($_POST ['nome']) ? $_POST['nome'] : '';
     $nomePai = isset($_POST ['nomePai']) ? $_POST['nomePai'] : '';
     $nomeMae = isset($_POST ['nomeMae']) ? $_POST['nomeMae'] : '';
@@ -324,10 +325,12 @@ and open the template in the editor.
     $fone2 = isset($_POST ['fone2']) ? $_POST['fone2'] : '';
     $email= isset($_POST ['email']) ? $_POST['email'] : '';
     
+    if ($nome != '' and $nomePai != '') {
     include './conexao.php';
 
     $query = "INSERT INTO usuario(nome, nomePai, nomeMae, dataNascimento, dataConversao, dataBatismo, sexo, estadoCivil, conjuge, quantidadeFilho, rg, cpf, rua, numero, bairro, estado, cidade, cep, referencia, status, nivel, fone1, fone2, email) VALUES ('$nome', '$nomePai', '$nomeMae', '$dataNascimento', '$dataConversao', '$dataBatismo', '$sexo', '$estadoCivil', '$conjuge', '$quantidadeFilho', '$rg', '$cpf', '$rua', '$numero', '$bairro', '$estado', '$cidade', '$cep', '$referencia', '$status', '$nivel', '$fone1', '$fone2', '$email')";
 
     mysqli_query($conn, $query);   
+    }
 
-
+    mysqli_close($conn);

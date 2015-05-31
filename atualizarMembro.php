@@ -270,7 +270,7 @@ and open the template in the editor.
                                         </td>
                                         <td>
                                             <select name='status' id='status' class='form-control'>
-                                                <option  value='".$query3['status']."' label=''".$query3['status']."'></option>
+                                                <option  value='".$query3['status']."' label='".$query3['status']."'></option>
                                                 <option value='Ativo(a)' label='Ativo(a)'></option>
                                                 <option value='Afastado(a)' label='Afatado(a)'></option>
                                                 <option value='Em disciplina' label='Em disciplina'></option>
