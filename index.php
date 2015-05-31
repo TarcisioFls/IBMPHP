@@ -1,4 +1,4 @@
-<?php
+ <?php
     include_once 'menu.php';
 ?>
 <!DOCTYPE html>
@@ -26,9 +26,14 @@ and open the template in the editor.
     </head>
     <body>
         <section>
+            <div class="total"><!--div site completo-->
+                
+           
+            <div id="cantos"></div>
             
                 <!-- Caroseul -->
-                <div class="container">
+                <div class="container" class="sitemeio">
+                   
                     <br>
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                       <!-- Indicators -->
@@ -117,53 +122,163 @@ and open the template in the editor.
         <p>Comemoraremos o aniversário de todos os membros que completam primaveras no mês de Janeiro.</p>
     </div>
     <div id="menu1" class="tab-pane fade">
-      <h3>FEVEREIRO</h3>
-      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
+      <h3>Eventos do Mês de Fevereiro</h3>
+      <div><img src="img/thumb1.png" alt="Thumb" width="400px" height="250"/></div>
+      <div>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          </button></div>
     </div>
     <div id="menu2" class="tab-pane fade">
-      <h3>MARÇO</h3>
-      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
+      <h3>Eventos do Mês de Março</h3>
+      <div><img src="img/thumb1.png" alt="Thumb" width="400px" height="250"/></div>
+      <div>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          </button></div>
     </div>
     <div id="menu3" class="tab-pane fade">
-      <h3>ABRIL</h3>
-      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
+      <h3>Eventos do Mês de Abril</h3>
+      <div><img src="img/thumb1.png" alt="Thumb" width="400px" height="250"/></div>
+      <div>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          </button></div>
     </div>
     <div id="menu4" class="tab-pane fade">
-      <h3>MAIO</h3>
-      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
+      <h3>Eventos do Mês de Maio</h3>
+      <div><img src="img/thumb1.png" alt="Thumb" width="400px" height="250"/></div>
+      <div>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          </button></div>
     </div>
     <div id="menu5" class="tab-pane fade">
-      <h3>JUNHO</h3>
-      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
+      <h3>Eventos do Mês de Junho</h3>
+      <div><img src="img/thumb1.png" alt="Thumb" width="400px" height="250"/></div>
+      <div>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          </button></div>
     </div>
     <div id="menu6" class="tab-pane fade">
-      <h3>JULHO</h3>
-      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
+      <h3>Eventos do Mês de Julho</h3>
+      <div><img src="img/thumb1.png" alt="Thumb" width="400px" height="250"/></div>
+      <div>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          </button></div>
     </div>
     <div id="menu7" class="tab-pane fade">
-      <h3>MARÇO</h3>
-      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
+      <h3>Eventos do Mês de Agosto</h3>
+      <div><img src="img/thumb1.png" alt="Thumb" width="400px" height="250"/></div>
+      <div>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          </button></div>
     </div>
     <div id="menu8" class="tab-pane fade">
-      <h3>ABRIL</h3>
-     <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
+      <h3>Eventos do Mês de Setembro</h3>
+     <div><img src="img/thumb1.png" alt="Thumb" width="400px" height="250"/></div>
+      <div>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          </button></div>
     </div>
     <div id="menu9" class="tab-pane fade">
-      <h3>MAIO</h3>
-      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
+      <h3>Eventos do Mes de Outubro</h3>
+      <div><img src="img/thumb1.png" alt="Thumb" width="400px" height="250"/></div>
+      <div>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          </button></div>
     </div>
     <div id="menu10" class="tab-pane fade">
-      <h3>JUNHO</h3>
-      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
+      <h3>Eventos do Mês de Novembro</h3>
+      <div><img src="img/thumb1.png" alt="Thumb" width="400px" height="250"/></div>
+      <div>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          </button></div>
     </div>
     <div id="menu11" class="tab-pane fade">
-      <h3>MAIO</h3>
-      <img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/>
+      <h3>Eventos do Mês de Dezembro</h3>
+      <div><img src="img/thumb1.png" alt="Thumb" width="400px" height="250"/></div>
+      <div>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+             <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          </button></div>
     </div>
    </div>
 </div>
 	</div>
-
+            <hr>
 	<div><!--div videos-->
 		<div class="video">
                 <h4 class="h4">Videos</h4>
@@ -177,6 +292,8 @@ and open the template in the editor.
                 <div id="ultimovideo">
 				<iframe width="342" height="300" src="https://www.youtube.com/embed/ljHqUVBbwJ8" frameborder="0" allowfullscreen></iframe>
         		</div>
+        <hr>
+                                                                        
         </div>
 	</div>
 	<div class="nhd"> <!--div noticias, horario do culto, downloads-->
@@ -215,32 +332,34 @@ and open the template in the editor.
 					
 			
 	</div>  <!--fim div noticias, horario do culto, downloads-->
+        <hr>
+        
 
 		<div class="projetos"> <!--div projetos-->
 	<div class="projeto1">
 		<h4>Culto Jovem</h4>
-							<div class="photo">
-								<a href="#approach"><img src="img/thumb1.png" alt="Thumb" width="171px" height="100"/></a>
-							</div>
-							<p class="P_GERAL">Eu vos escrevi, jovens, porque sois fortes, e a palavra de Deus está em vós, e já vencestes o maligno.(1 João 2:14)<br/>Culto Todos os Domingos às 09h00 </p>
+		<div class="photo">
+                    <a href="#approach"><img src="img/portfolio1.jpg" alt="Thumb" width="171px" height="100"/></a>
+		</div>
+            <p class="P_GERAL">Eu vos escrevi, jovens, porque sois fortes, e a palavra de Deus está em vós, e já vencestes o maligno.(1 João 2:14)<br/>Culto Todos os Domingos às 09h00 </p>
 	</div>
-	<div class="projeto2">
-		<h4>Escola Bíblica (EBD)</h4>
-							<div class="photo">
-								<a href="#methods"><img src="img/thumb2.png" alt="Thumb" width="180px" height="100"/></a>
-							</div>
-							<p class="P_GERAL">Bem-aventurado o homem que não anda segundo o conselho dos ímpios, nem se detém no caminho dos pecadores, 
-							nem se assenta na roda dos escarnecedores.
-							Antes tem o seu prazer na lei do Senhor, e na sua lei medita de dia e de noite.(Salmos 1:1-2)<br/> Todos os Domingos às 09h00</p>
-							<p class="more"><a href="#"> &nbsp </a></p>
+                    <div class="projeto2" class="nossahistoria">
+            <h4 id="nh">Escola Bíblica (EBD)</h4>
+		<div class="photo">
+                    <a href="#methods"><img src="img/portfolio2.jpg" alt="Thumb" width="180px" height="100"/></a>
+		</div>
+            <p class="P_GERAL" id="texto">Bem-aventurado o homem que não anda segundo o conselho dos ímpios, nem se detém no caminho dos pecadores, 
+		nem se assenta na roda dos escarnecedores.
+		Antes tem o seu prazer na lei do Senhor, e na sua lei medita de dia e de noite.(Salmos 1:1-2)<br/> Todos os Domingos às 09h00</p>
+		<p class="more"><a href="#"> &nbsp </a></p>
 	</div>
 	<div class="projeto3">
 		<h4>Culto de Oração</h4>
-							<div class="photo">
-								<a href="#results"><img src="img/thumb3.png" alt="Thumb" width="171px" height="100"/></a>
-							</div>
-							<p class="P_GERAL">“Vinde, adoremos e prostremo-nos; ajoelhemo-nos diante do Senhor, que nos criou” (Sl 95.6)<br/> Cultos todas as Quartas feiras às 19h00</p>
-							<p class="more"><a href="#"> &nbsp </a></p>
+		<div class="photo">
+                <a href="#results"><img src="portfolio3.pjg" alt="Thumb" width="171px" height="100"/></a>
+		</div>
+		<p class="P_GERAL">“Vinde, adoremos e prostremo-nos; ajoelhemo-nos diante do Senhor, que nos criou” (Sl 95.6)<br/> Cultos todas as Quartas feiras às 19h00</p>
+            <p class="more"><a href="#"> &nbsp </a></p>
 	</div>
 	
 </div><!--fim div projetos-->
@@ -252,9 +371,10 @@ and open the template in the editor.
 </div> <!--fim div carrousel-->
 		
         </div> <!--fim div container-->
-                    </div>
-                </div>
+<div id="cantodireito"></div>
 
+ </div><!--fim div site completo-->
+            
             </section>
 
         

@@ -286,6 +286,7 @@ body{
 	}
 	.video{
 		width: 100%;
+                
 	}
 	#ultimovideo{
 		float: right;
@@ -299,22 +300,27 @@ body{
 	}
 	.nhd{
 		width: 100%;
-
 	}
 	.horariodoculto{
 		width: 33%;
 		float: left;
-		height: 350px;
+		height: 450px;
+                text-align: center;
+                margin-top: 30px;
 	}
 	.noticias{
 		width: 33%;
 		float: left;
-		height: 350px;
+		height: 450px;
+                text-align: center;
+                margin-top: 30px;
 	}
 	.downloads{
 		width: 34%;
 		float: left;
-		height: 350px;
+		height: 450px;
+                text-align: center;
+                margin-top: 30px;
 	}
 	.projetos{
 		width: 100%;
@@ -322,14 +328,26 @@ body{
 	.projeto1{
 		width: 33%;
 		float: left;
+                text-align: center;
 	}
 	.projeto2{
 		width: 33%;
 		float: left;
+                text-align: center;
+                
+    border-left-style: solid;
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-top:solid transparent;
+    border-bottom:solid transparent;
+
+
 	}
 	.projeto3{
 		width: 34%;
-		float: left;
+		float: right;
+                text-align: center;
 	}
 /* fim css novo do index*/
 
@@ -338,6 +356,20 @@ body{
     background-color: blue;
     width: 100%;
     height: 10px;
+
+}
+#c
+    background-color: blue;
+    width: 20%;
+    float: left;
+}
+.total{
+    width: 100%;
+}
+#cantodireito{
+    float: right;
+    width: 10%;
+    background-color: blue;
 
 }
 
