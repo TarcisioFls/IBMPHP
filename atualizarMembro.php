@@ -17,7 +17,7 @@ and open the template in the editor.
         <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
-        <form method="POST" action="">
+        <form method="GET" action="cadastroMembro.php">
             <section class="container-fluid">
             <br/>
             <a href="index.php" <span>Pagina Inicial</span></a>
@@ -60,6 +60,14 @@ and open the template in the editor.
                         $result2 = mysqli_query($conn, $queryAtualizar);
                         while ($query3 = mysqli_fetch_array($result2,MYSQLI_ASSOC)) {
                             echo "<tr>
+                                        <td>
+                                            <label for='id' classe='hidden'>id</label>
+                                        </td>                            
+                                        <td>
+                                            <input type='text' name='id' id='id' required='required'  readonly='true' class='form-control' value='".$query3['id']."'>
+                                        </td>
+                                    </tr>
+                                    <tr>
                                         <td>
                                             <label for='nome'>Nome</label>
                                         </td>                            
@@ -326,6 +334,8 @@ and open the template in the editor.
                         }    
                     ?>
             </section>
+            <input type="submit" value="Atualizar Cadastro" class="btn">
+            <input type="reset" value="Limpar" class="btn">
         </form>
     </body>
 </html>

@@ -24,7 +24,7 @@ and open the template in the editor.
                 <h3>Dados Pessoais</h3>
                 <div class="panel panel-default">
                     <table class="table-condensed">
-                        <tr>
+                       <tr>
                             <td>
                                 <label for="nome">Nome</label>
                             </td>                            
@@ -333,4 +333,4 @@ and open the template in the editor.
     mysqli_query($conn, $query);   
     }
 
-    mysqli_close($conn);
+    
