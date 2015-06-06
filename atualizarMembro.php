@@ -17,7 +17,7 @@ and open the template in the editor.
         <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
-        <form method="GET" action="cadastroMembro.php">
+        <form method="POST" action="cadastroMembro.php">
             <section class="container-fluid">
             <br/>
             <a href="index.php" <span>Pagina Inicial</span></a>
@@ -61,10 +61,10 @@ and open the template in the editor.
                         while ($query3 = mysqli_fetch_array($result2,MYSQLI_ASSOC)) {
                             echo "<tr>
                                         <td>
-                                            <label for='id' classe='hidden'>id</label>
+                                            <label for='id'>id</label>
                                         </td>                            
                                         <td>
-                                            <input type='text' name='id' id='id' required='required'  readonly='true' class='form-control' value='".$query3['id']."'>
+                                            <input type='text' name='id' id='id' required='required' readonly='true' class='form-control' value='".$query3['id']."'>
                                         </td>
                                     </tr>
                                     <tr>

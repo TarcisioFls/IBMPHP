@@ -53,6 +53,7 @@ and open the template in the editor.
                                 </ul>
                             </li>                                
                             <li role="presentation" class="#"><a href="./relatorio.php">Busca</a></li>
+                            <li role="presentation"><a href="delete.php">Apagar Membro</a></li>
                         </ul>
                         <div class="navbar-form navbar-right" role="button">
                             <div class="form-group">
