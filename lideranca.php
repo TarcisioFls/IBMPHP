@@ -1,6 +1,4 @@
-<?php
-    include_once 'menu.php';
-?>
+
 
 <!DOCTYPE html>
 <!--
@@ -10,7 +8,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title></title>
+        <title>1ª Igreja Batista em Muribeca</title>
          <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -18,6 +16,8 @@ and open the template in the editor.
          <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
-        
+        <?php
+            include_once 'menu.php';
+        ?>
     </body>
 </html>

@@ -1,13 +1,10 @@
- <?php
-    include_once 'menu.php';
-?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html lang="pt-br">
     <head>
        <title>1ª Igreja Batista em Muribeca</title>
         <meta charset="UTF-8">
@@ -16,6 +13,7 @@ and open the template in the editor.
         <script src="js/jquery-2.1.3.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/teste.js"></script>
         <style>
             .carousel-inner > .item > img,
             .carousel-inner > .item > a > img {
@@ -25,6 +23,9 @@ and open the template in the editor.
         </style>
     </head>
     <body>
+        <?php
+            include_once 'menu.php';            
+        ?>
         <section>
             <div class="total"><!--div site completo-->
                 
@@ -85,24 +86,22 @@ and open the template in the editor.
 		
 	
 	<div class="evento"><!--div eventos-->
-		<div class="container">
-                    <div id="divimage"><h2>Eventos</h2></div>
- 
-  <ul class="nav nav-tabs">
-    <li><a data-toggle="tab" href="#menu12">JAN</a></li>
-    <li><a data-toggle="tab" href="#menu1">FEV</a></li>
-    <li><a data-toggle="tab" href="#menu2">MAR</a></li>
-    <li><a data-toggle="tab" href="#menu3">ABR</a></li>
-    <li><a data-toggle="tab" href="#menu4">MAI</a></li>
-    <li><a data-toggle="tab" href="#menu5">JUN</a></li>
-    <li><a data-toggle="tab" href="#menu6">JUL</a></li>
-    <li><a data-toggle="tab" href="#menu7">AGOS</a></li>
-    <li><a data-toggle="tab" href="#menu8">SET</a></li>
-    <li><a data-toggle="tab" href="#menu9">OUT</a></li>
-    <li><a data-toggle="tab" href="#menu10">NOV</a></li>
-    <li><a data-toggle="tab" href="#menu11">DEZ</a></li>
-    
-  </ul>
+            <div class="container">
+                <div id="divimage"><h2>Eventos</h2></div>
+                    <ul class="nav nav-tabs">
+                        <li><a data-toggle="tab" href="#menu12">JAN</a></li>
+                        <li><a data-toggle="tab" href="#menu1">FEV</a></li>
+                        <li><a data-toggle="tab" href="#menu2">MAR</a></li>
+                        <li><a data-toggle="tab" href="#menu3">ABR</a></li>
+                        <li><a data-toggle="tab" href="#menu4">MAI</a></li>
+                        <li><a data-toggle="tab" href="#menu5">JUN</a></li>
+                        <li><a data-toggle="tab" href="#menu6">JUL</a></li>
+                        <li><a data-toggle="tab" href="#menu7">AGOS</a></li>
+                        <li><a data-toggle="tab" href="#menu8">SET</a></li>
+                        <li><a data-toggle="tab" href="#menu9">OUT</a></li>
+                        <li><a data-toggle="tab" href="#menu10">NOV</a></li>
+                        <li><a data-toggle="tab" href="#menu11">DEZ</a></li>
+                    </ul>
 
   <div class="tab-content">
     <div id="menu12" class="tab-pane fade">

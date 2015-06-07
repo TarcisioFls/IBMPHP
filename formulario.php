@@ -1,6 +1,3 @@
-<?php
-    include_once './menu.php';
-?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -9,7 +6,7 @@ and open the template in the editor.
 -->
 <html lang="pt-br">
     <head>
-        <title>Formulario de Cadastro</title>
+        <title>1ª Igreja Batista em Muribeca</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -17,6 +14,9 @@ and open the template in the editor.
         <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
+        <?php
+            include_once './menu.php';
+        ?>
         <form method="POST" action="formulario.php">
             <section class="container-fluid">
                 <br/>

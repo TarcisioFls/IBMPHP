@@ -1,6 +1,3 @@
-<?php
-    include_once 'menu.php';
-?>
 
 <!DOCTYPE html>
 <!--
@@ -10,15 +7,18 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title></title>
+        <title>1ª Igreja Batista em Muribeca</title>
          <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" href="css/bootstrap.min.css">
          <script src="js/jquery-2.1.3.js"></script>
          <script src="js/bootstrap.min.js"></script>
          <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    </head>
+    </head>    
     <body>
+        <?php
+            include_once 'menu.php';
+        ?>
         <section class="container-fluid">
         <div  class="nossahistoria">
             <div>
