@@ -12,6 +12,36 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/jquery-2.1.3.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        
+        <script>
+            $(function(){
+               $('#form').submit(function(){
+                  $.ajax({
+                     url: 'apagandoMembro.php',
+                     type: 'POST',
+                     data: $('#form').serialize(),
+                     success: function(result){
+                         
+                         if(result == "Sucesso") {
+                         $("#form").each(function () {
+                             this.reset();
+                         });                         
+                         $("#teste").html('<div class="alert alert-success"><button type="button" class="close" \n\
+                             data-dismiss="alert">×</button><h4>Sucesso!</h4>Usuário removido com sucesso</div>');
+            
+                         $("#teste").focus();
+                         $("#refre").load("selecionarApagar.php #refre");
+                        }
+                        else {
+                            $("#teste").html('<div class="alert alert-error"><button type="button" class="close" \n\
+                                 data-dismiss="alert">×</button><h4>Falha!</h4>Exclusão não efetuada. Por favor tentar novamente!</div>');
+                        }
+                     }
+                  });
+                  return false;
+               }); 
+            });
+        </script>
     </head>
     <body>
         <?php
@@ -19,11 +49,12 @@ and open the template in the editor.
         ?>
         <br/>
         <section class="container-fluid">
+            <div id="teste"></div>
             <br/>
             <a href="index.php" <span>Pagina Inicial</span></a> -> <a href="selecionarApagar.php" <span>Apagar Membro</span></a>
             <h3>Resultado da Busca</h3>
-            <form method="POST" action="apagandoMembro.php">
-                <div class="panel panel-default">
+            <form id="form" method="POST" action="apagandoMembro.php">
+                <div id="refre" class="panel panel-default">
                     <table class="table table-bordered table-hover" title="Resultado da Busca">
                     <thead>
                     <tr>
@@ -65,7 +96,7 @@ and open the template in the editor.
                     $query = "SELECT * FROM usuario WHERE nome like '$nome%'";
                            // . " OR dataNascimento like '%$dataNascimento%' OR dataConvesao like '%$dataConversao%' OR dataBatismo = '$dataBatismo' OR sexo = '$sexo' OR estadoCivil = '$estadoCivil' OR bairro = '$bairro' OR estado = '$estado' OR cidade = '$cidade' OR cep = '$cep' OR status = '$status' OR nivel = '$nivel' ";
 
-                    $result = mysqli_query($conn, $query);
+                    $result = mysqli_query($conn, $query) or die(mysqli_error());
 
                     while ($query2 = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
                         echo "<tr><td><input type='radio' name='id' value='".$query2['id']."'></td><td>".$query2['nome']."</td><td>".$query2['nomePai']."</td><td>".$query2['nomeMae']."</td><td>".$query2['dataNascimento']."</td><td>".

@@ -13,10 +13,19 @@
     $local = isset($_POST['local']) ? $_POST['local'] : '';
     $descricao = isset($_POST['descricao']) ? $_POST['descricao'] : '';
     
+    if (!empty($nome)){
     include './conexao.php';
     
     $query = "INSERT INTO evento(nome, dataInicio, dataTerminio, horaInicio, horaTermino, grupo, local, descricao) VALUES ('$nome', '$dataInicio', '$dataTerminio', '$horaInicio', '$horaTermino', '$grupo', '$local', '$descricao')";
+    }
     
-    mysqli_query($conn, $query);
+   $result = mysqli_query($conn, $query) or die(mysqli_error());
+   
+   if ($result) {
+       echo 'Sucesso';
+   }
+   else {
+       echo 'Falha';
+   }
 
 ?>

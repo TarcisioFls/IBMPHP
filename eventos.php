@@ -12,13 +12,41 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/jquery-2.1.3.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        
+        <script>
+            $(function(){
+               $('#form').submit(function(){
+                  $.ajax({
+                     url: 'cadastroEvento.php',
+                     type: 'POST',
+                     data: $('#form').serialize(),
+                     success: function(result){
+                             if(result == "Sucesso") {
+                             $("#form").each(function () {
+                                 this.reset();
+                             });
+                             $("#teste").html('<div class="alert alert-success"><button type="button" class="close" \n\
+                                 data-dismiss="alert">×</button><h4>Sucesso!</h4>Atualização Realizada com sucesso</div>');
+                             $("#nome").focus();    
+                        }
+                        else {
+                            $("#teste").html('<div class="alert alert-error"><button type="button" class="close" \n\
+                                 data-dismiss="alert">×</button><h4>Falha!</h4>Cadastro não efetuado. Por favor tentar novamente!</div>');
+                        }
+                     }
+                  });
+                  return false;
+               }); 
+            });
+        </script>
     </head>
     <body>
         <?php
             include_once './menu.php';
         ?>
         <section class="container-fluid">
-            <form method="POST" action="cadastroEvento.php">
+            <div id="teste"></div>
+            <form id="form" method="POST" action="">
                 <br/>
                 <a href="index.php" <span>Pagina Inicial</span></a>
                 <h3>Cadastros de Eventos</h3>

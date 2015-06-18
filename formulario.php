@@ -12,13 +12,41 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/jquery-2.1.3.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        
+        <script>
+            $(function(){
+               $('#form').submit(function(){
+                  $.ajax({
+                     url: 'cadastroMembro2.php',
+                     type: 'POST',
+                     data: $('#form').serialize(),
+                     success: function(result){
+                         if(result == "Sucesso") {
+                         $("#form").each(function () {
+                             this.reset();
+                         });
+                         $("#teste").html('<div class="alert alert-success"><button type="button" class="close" \n\
+                             data-dismiss="alert">×</button><h4>Sucesso!</h4>Atualização Realizada com sucesso</div>');
+                         $("#nome").focus();    
+                        }
+                        else {
+                            $("#teste").html('<div class="alert alert-error"><button type="button" class="close" \n\
+                                 data-dismiss="alert">×</button><h4>Falha!</h4>Cadastro não efetuado. Por favor tentar novamente!</div>');
+                        }
+                     }
+                  });
+                  return false;
+               }); 
+            });
+        </script>
     </head>
     <body>
         <?php
             include_once './menu.php';
         ?>
-        <form method="POST" action="formulario.php">
+        <form id="form" method="POST" action="">
             <section class="container-fluid">
+                <div id="teste"></div>
                 <br/>
                 <a href="index.php" <span>Pagina Inicial</span></a>
                 <h3>Dados Pessoais</h3>
@@ -288,7 +316,7 @@ and open the template in the editor.
                         </tr>
                     </table>
                     </div>
-                <input type="submit" value="Salvar Cadastro" class="btn">
+                <input id="salvar" type="submit" value="Salvar Cadastro" class="btn">
                 <input type="reset" value="Limpar" class="btn">
             </section>                
         </form>
@@ -297,40 +325,6 @@ and open the template in the editor.
 <?php
     //require_once './formulario.php';
     
-    ini_set('default_charset','UTF-8');
     
-        
-    $nome = isset($_POST ['nome']) ? $_POST['nome'] : '';
-    $nomePai = isset($_POST ['nomePai']) ? $_POST['nomePai'] : '';
-    $nomeMae = isset($_POST ['nomeMae']) ? $_POST['nomeMae'] : '';
-    $dataNascimento = isset($_POST ['dataNascimento']) ? $_POST['dataNascimento'] : '';
-    $dataConversao = isset($_POST ['dataConversao']) ? $_POST['dataConversao'] : '';
-    $dataBatismo = isset($_POST ['dataBatismo']) ? $_POST['dataBatismo'] : '';
-    $sexo = isset($_POST ['sexo']) ? $_POST['sexo'] : '';
-    $estadoCivil = isset($_POST ['estadoCivil']) ? $_POST['estadoCivil'] : '';
-    $conjuge = isset($_POST ['conjuge']) ? $_POST['conjuge'] : '';
-    $quantidadeFilho = isset($_POST ['quantidadeFilho']) ? $_POST['quantidadeFilho'] : '';
-    $rg = isset($_POST ['rg']) ? $_POST['rg'] : '';
-    $cpf = isset($_POST ['cpf']) ? $_POST['cpf'] : '';
-    $rua = isset($_POST ['rua']) ? $_POST['rua'] : '';
-    $numero = isset($_POST ['numero']) ? $_POST['numero'] : '';
-    $bairro = isset($_POST ['bairro']) ? $_POST['bairro'] : '';
-    $estado = isset($_POST ['estado']) ? $_POST['estado'] : '';
-    $cidade = isset($_POST ['cidade']) ? $_POST['cidade'] : '';
-    $cep = isset($_POST ['cep']) ? $_POST['cep'] : '';
-    $referencia = isset($_POST ['referencia']) ? $_POST['referencia'] : '';
-    $status = isset($_POST ['status']) ? $_POST['status'] : '';
-    $nivel = isset($_POST ['nivel']) ? $_POST['nivel'] : '';
-    $fone1 = isset($_POST ['fone1']) ? $_POST['fone1'] : '';
-    $fone2 = isset($_POST ['fone2']) ? $_POST['fone2'] : '';
-    $email= isset($_POST ['email']) ? $_POST['email'] : '';
     
-    if ($nome != '' and $nomePai != '') {
-    include './conexao.php';
-
-    $query = "INSERT INTO usuario(nome, nomePai, nomeMae, dataNascimento, dataConversao, dataBatismo, sexo, estadoCivil, conjuge, quantidadeFilho, rg, cpf, rua, numero, bairro, estado, cidade, cep, referencia, status, nivel, fone1, fone2, email) VALUES ('$nome', '$nomePai', '$nomeMae', '$dataNascimento', '$dataConversao', '$dataBatismo', '$sexo', '$estadoCivil', '$conjuge', '$quantidadeFilho', '$rg', '$cpf', '$rua', '$numero', '$bairro', '$estado', '$cidade', '$cep', '$referencia', '$status', '$nivel', '$fone1', '$fone2', '$email')";
-
-    mysqli_query($conn, $query);   
-    }
-
     

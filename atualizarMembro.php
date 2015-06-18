@@ -17,7 +17,7 @@ and open the template in the editor.
         <?php
             include_once './menu.php';
         ?>
-        <form method="POST" action="cadastroMembro.php">
+        <form id="atualizacao" method="POST" action="cadastroMembro.php">
             <section class="container-fluid">
             <br/>
             <a href="index.php" <span>Pagina Inicial</span></a>
