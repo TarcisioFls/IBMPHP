@@ -17,7 +17,7 @@ and open the template in the editor.
         <?php
             $id = isset($_POST['id']) ? $_POST['id'] : '';
             
-            include_once './conexao.php';
+            include "./conexao.php";
             
             $delete = "DELETE FROM usuario WHERE id = '$id'";
             

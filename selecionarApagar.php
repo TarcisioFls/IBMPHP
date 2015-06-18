@@ -46,7 +46,6 @@ and open the template in the editor.
                     <tbody>
 
                 <?php
-
                     $nome = isset($_POST['nome']) ? $_POST['nome'] : '';
                   /*  $dataNascimento = isset($_POST['dataNascimento']) ? $_POST['dataNascimento'] : '';
                     $dataConversao = isset($_POST['dataConversao']) ? $_POST['dataConversao'] : '';
@@ -59,21 +58,16 @@ and open the template in the editor.
                     $cep = isset($_POST['cep']) ? $_POST['cep'] : '';
                     $status = isset($_POST['status']) ? $_POST['status'] : '';
                     $nivel = isset($_POST['nivel']) ? $_POST['nivel'] : ''; */
-
                     include_once './conexao.php';
-
                     $query = "SELECT * FROM usuario WHERE nome like '$nome%'";
                            // . " OR dataNascimento like '%$dataNascimento%' OR dataConvesao like '%$dataConversao%' OR dataBatismo = '$dataBatismo' OR sexo = '$sexo' OR estadoCivil = '$estadoCivil' OR bairro = '$bairro' OR estado = '$estado' OR cidade = '$cidade' OR cep = '$cep' OR status = '$status' OR nivel = '$nivel' ";
-
                     $result = mysqli_query($conn, $query);
-
                     while ($query2 = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
                         echo "<tr><td><input type='radio' name='id' value='".$query2['id']."'></td><td>".$query2['nome']."</td><td>".$query2['nomePai']."</td><td>".$query2['nomeMae']."</td><td>".$query2['dataNascimento']."</td><td>".
                                         $query2['dataConversao']."</td><td>".$query2['dataBatismo']."</td><td>".$query2['estadoCivil']."</td><td>".
                                         $query2['rua']."</td><td>".$query2['bairro']."</td><td>".$query2['cidade']."</td><td>".
                                         $query2['status']."</td><td>".$query2['nivel']."</td><td>".$query2['fone1']."</td></tr>";
                     }
-
                     mysqli_close($conn);
                 ?>
                     </tbody>

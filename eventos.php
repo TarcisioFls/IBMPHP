@@ -20,9 +20,9 @@ and open the template in the editor.
         <section class="container-fluid">
             <form method="POST" action="cadastroEvento.php">
                 <br/>
-                <a href="index.php" <span>Pagina Inicial</span></a>
-                <h3>Cadastros de Eventos</h3>
-                <div class="panel panel-default">
+                <a href="index_privado.php" <span>Pagina Inicial</span></a>
+                <h1 class="text-center">Cadastros de Eventos</h1>
+                <div class="panel panel-default2">
                     <table class="table-condensed">
                         <tr>
                             <td>
