@@ -48,56 +48,61 @@ and open the template in the editor.
             <section class="container-fluid">
                 <div id="teste"></div>
                 <br/>
-                <a href="index.php" <span>Pagina Inicial</span></a>
+                <a href="index_privado.php" <span>Pagina Inicial</span></a>
                 <h3>Dados Pessoais</h3>
-                <div class="panel panel-default">
+                <div class="panel panel-default2">
                     <table class="table-condensed">
                        <tr>
                             <td>
                                 <label for="nome">Nome</label>
                             </td>                            
                             <td>
-                                <input type="text" name="nome" id="nome" required="required" class="form-control">
+                                <input type="text" name="nome" id="nome" required="required" class="form-control2">
                             </td>
+			    <th class="corAsteristico">*<th>
                         </tr>
                         <tr>
                             <td>
                                 <label for="nomePai">Nome do pai</label>                    
                             </td>
                             <td>
-                                <input type="text" name="nomePai" id="nomePai" required="required" class="form-control">
-                            </td>
+                                <input type="text" name="nomePai" id="nomePai" required="required" class="form-control2">
+                            </td>	
+							<th class="corAsteristico">*<th>							
                         </tr>
                         <tr>
                             <td>
                                 <label for="nomeMae">Nome da Mãe</label>
                             </td>
                             <td>
-                                <input type="text" name="nomeMae" id="nomeMae" required="required" class="form-control">
+                                <input type="text" name="nomeMae" id="nomeMae" required="required" class="form-control2">
                             </td>
+							<th class="corAsteristico">*<th>
                         </tr>
                         <tr>
                             <td>
                                 <label for="dataNascimento">Data de Nascimento</label>
                             </td>
                             <td>
-                                <input type="date" name="dataNascimento" id="dataNascimento" required="required" class="form-control">
+                                <input type="date" name="dataNascimento" id="dataNascimento" required="required" class="form-control2">
                             </td>
+							<th class="corAsteristico">*<th>
                         </tr>
                         <tr>
                             <td>
                                 <label for="dataConversao">Data de Conversão</label>
                             </td>
                             <td>
-                                <input type="date" name="dataConversao" id="dataConversao" required="required" class="form-control">
+                                <input type="date" name="dataConversao" id="dataConversao" required="required" class="form-control2">
                             </td>
+							<th class="corAsteristico">*<th>
                         </tr>
                         <tr>
                             <td>
                                 <label for="dataBatismo">Data de Batismo</label>
                             </td>
                             <td>
-                                <input type="date" name="dataBatismo" id="dataBatismo" class="form-control">
+                                <input type="date" name="dataBatismo" id="dataBatismo" class="form-control2">
                             </td>
                         </tr>
                         <tr>
@@ -105,19 +110,20 @@ and open the template in the editor.
                                 <label for="sexo">Sexo</label>
                             </td>
                             <td>
-                                <select name="sexo" id="sexo" required="required" class="form-control">
+                                <select name="sexo" id="sexo" required="required" class="form-control2">
                                     <option value="" label=""></option>
                                     <option value="Feminino" label="Feminino"></option>
                                     <option value="Masculino" label="Masculino"></option>
                                 </select>
                             </td>
+							<th class="corAsteristico">*<th>
                         </tr>
                         <tr>
                             <td>
                                 <label for="estadoCivil">Estado Civil</label>
                             </td>
                             <td>
-                                <select name="estadoCivil" id="estadoCivil" class="form-control">
+                                <select name="estadoCivil" id="estadoCivil" class="form-control2">
                                     <option value="" label=""></option>
                                     <option value="Solteiro(a)" label="Solteiro(a)"></option>
                                     <option value="Casado(a)" label="Casado(a)"></option>
@@ -125,13 +131,14 @@ and open the template in the editor.
                                     <option value="Viúvo(a)" label="Viúvo(a)"></option>
                                 </select>
                             </td>
+							<th class="corAsteristico">*<th>
                         </tr>
-                        <tr>
+						<tr>
                             <td>
                                 <label for="conjuge">Cônjuge</label>
                             </td>
                             <td>
-                                <input type="text" name="conjuge" id="conjuge" class="form-control">
+                                <input type="text" name="conjuge" id="conjuge" class="form-control2">
                             </td>
                         </tr>
                         <tr>
@@ -139,7 +146,7 @@ and open the template in the editor.
                                 <label for="quantidadeFilho">Quantidade de Filhos</label>
                             </td>
                             <td>
-                                <input type="text" name="quantidadeFilho" id="quantidadeFilho" class="form-control">
+                                <input type="text" name="quantidadeFilho" id="quantidadeFilho" class="form-control2">
                             </td>
                         </tr>
                         <tr>
@@ -147,50 +154,55 @@ and open the template in the editor.
                                 <label for="rg">RG</label>
                             </td>
                             <td>
-                                <input type="text" name="rg" id="rg" class="form-control">
+                                <input type="text" name="rg" id="rg" class="form-control2">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="cpf">CPF</label>
+                                <label for="cpf" >CPF</label>
                             </td>
                             <td>
-                                <input type="text" name="cpf" id="cpf" class="form-control">
+                                <input onkeypress="return MascaraNumerica()" type="text" name="cpf" id="cpf" class="form-control2">
                             </td>
                         </tr>
                     </table>
                 </div>
                 <h3>Dados de Endereço</h3>
-                <div class="panel panel-default">
+                <div class="panel panel-default2">
                     <table class="table-condensed">
                         <tr>
                             <td>
                                 <label for="rua">Rua</label>
                             </td>
                             <td>
-                                <input type="text" name="rua" id="rua" required="required" class="form-control">
+                                <input type="text" name="rua" id="rua" required="required" class="form-control2">
                             </td>
-                            <td>
-                                <label for="numero">Número</label>
-                            </td>
-                            <td>
-                                <input type="text" name="numero" id="numero" class="form-control">
-                            </td>
+							<th class="corAsteristico">*<th>
                         </tr>
+						<tr>
+							<td>
+								<label for="numero">Número</label>
+                            </td>
+                            <td>
+                                <input type="text" name="numero" id="numero" class="form-control2">
+                            </td>
+							<th class="corAsteristico">*<th>
+						</tr>
                         <tr>
                             <td>
                                 <label for="bairro">Bairro</label>
                             </td>
                             <td>
-                                <input type="text" name="bairro" id="bairro" class="form-control">
+                                <input type="text" name="bairro" id="bairro" class="form-control2">
                             </td>
+							<th class="corAsteristico">*<th>
                         </tr>
                         <tr>
                             <td>
                                 <label for="estado">Estado</label>
                             </td>
                             <td>
-                                <select id="estado" name="estado" required="required" class="form-control">
+                                <select id="estado" name="estado" required="required" class="form-control2">
                                     <option value="" label=""></option>
                                     <option value="Acre" label="Acre"></option>
                                     <option value="Alagoas" label="Alagoas"></option>
@@ -221,35 +233,39 @@ and open the template in the editor.
                                     <option value="Tocantins" label="Tocantins"></option>
                                 </select>
                             </td>
+							<th class="corAsteristico">*<th>
                         </tr>
                         <tr>
                             <td>
                                 <label for="cidade">Cidade</label>
                             </td>
                             <td>
-                                <input type="text" name="cidade" id="cidade" class="form-control">
+                                <input type="text" name="cidade" id="cidade" class="form-control2">
                             </td>
+							<th class="corAsteristico">*<th>
                         </tr>
                         <tr>
                             <td>
                                 <label for="cep">CEP</label>
                             </td>
                             <td>
-                                <input type="text" name="cep" id="cep" class="form-control">
+                                <input type="text" name="cep" id="cep" class="form-control2">
                             </td>
+							
                         </tr>
                         <tr>
                             <td>
                                 <label for="referencia">Referência</label>
                             </td>
                             <td>
-                                <input type="text" name="referencia" id="referencia" required="required" class="form-control">
+                                <input type="text" name="referencia" id="referencia" required="required" class="form-control2">
                             </td>
+							<th class="corAsteristico">*<th>
                         </tr>
                     </table>
                 </div>
                 <h3>Dados do Perfil</h3>
-                    <div  class="panel panel-default">
+                    <div  class="panel panel-default2">
                     <table class="table-condensed">
                         <tr>
                         <label for="imagem"> Imagem do Membro </label>
@@ -261,8 +277,9 @@ and open the template in the editor.
                             <td>
                                 <label for="status">Status</label>
                             </td>
+
                             <td>
-                                <select name="status" id="status" class="form-control">
+                                <select name="status" id="status" class="form-control2">
                                     <option value="" label=""></option>
                                     <option value="Ativo(a)" label="Ativo(a)"></option>
                                     <option value="Afastado(a)" label="Afatado(a)"></option>
@@ -270,13 +287,14 @@ and open the template in the editor.
                                     <option value="Falecido" label="falecido"></option>
                                 </select>
                             </td>
+							<th class="corAsteristico">*<th>
                         </tr>
                         <tr>
                             <td>
                                 <label for="nivel">Nível</label>
                             </td>
                             <td>
-                                <select name="nivel" id="nivel" class="form-control">
+                                <select name="nivel" id="nivel" class="form-control2">
                                     <option value="" label=""></option>
                                     <option value="Congregado" label="Congregado"></option>
                                     <option value="Membro" label="Membro"></option>
@@ -284,26 +302,28 @@ and open the template in the editor.
                                     <option value="Pastor" label="Pastor"></option>                                    
                                 </select>
                             </td>
+							<th class="corAsteristico">*<th>
                         </tr>
                     </table>
                 </div>
                 <h3>Dados de Contatos</h3>
-                    <div  class="panel panel-default">
+                    <div  class="panel panel-default2">
                     <table class="table-condensed">
                         <tr>
                             <td>
                                 <label for="fone1">Telefone Primario</label>
                             </td>
                             <td>
-                                <input type="text" name="fone1" id="fone1" class="form-control">
+                                <input type="text" name="fone1" id="fone1" class="form-control2">
                             </td>
+							<th class="corAsteristico">*<th>
                         </tr>
                         <tr>
                             <td>
                                 <label for="fone2">Telefone Para Recados</label>
                             </td>
                             <td>
-                                <input type="text" name="fone2" id="fone2" class="form-control">
+                                <input type="text" name="fone2" id="fone2" class="form-control2">
                             </td>
                         </tr>
                         <tr>
@@ -311,8 +331,9 @@ and open the template in the editor.
                                 <label for="email">E-mail</label>
                             </td>
                             <td>
-                                <input type="email" name="email" id="email" class="form-control">
+                                <input type="email" name="email" id="email" class="form-control2">
                             </td>
+							<th class="corAsteristico">*<th>
                         </tr>
                     </table>
                     </div>
@@ -327,4 +348,5 @@ and open the template in the editor.
     
     
     
+
     

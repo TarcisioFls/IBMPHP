@@ -1,10 +1,14 @@
 <?php
-    ini_set( 'display_errors', true );
-    error_reporting( E_ALL );
-    
-    ini_set('default_charset','UTF-8');
-    
-    $conn = mysqli_connect('localhost', 'root', '', 'ibm2', 3306);
-    if (!$conn) {
-        die('Não foi possivel Conectar: ' .mysqli_error());
-    }
+
+// faz conexão com o servidor MySQL
+$local_serve = "localhost"; 	 // local do servidor
+$usuario_serve = "root";		 // nome do usuario
+$senha_serve = "";			 	 // senha
+$banco_de_dados = "ibm2"; 	 // nome do banco de dados
+
+$conn = @mysql_connect($local_serve,$usuario_serve,$senha_serve) or die ("O servidor não responde!");
+
+// conecta-se ao banco de dados
+$db = @mysql_select_db($banco_de_dados,$conn) 
+	or die ("Não foi possivel conectar-se ao banco de dados!");
+	

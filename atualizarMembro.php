@@ -53,7 +53,7 @@ and open the template in the editor.
             //            $fone2 = isset($_POST ['fone2']) ? $_POST['fone2'] : '';
             //            $email= isset($_POST ['email']) ? $_POST['email'] : '';
 
-                        include './conexao.php';
+                       include "./conexao.php";
 
                         $queryAtualizar = "SELECT * FROM usuario WHERE id ='$id'";
 

@@ -60,7 +60,7 @@ and open the template in the editor.
                     $status = isset($_POST['status']) ? $_POST['status'] : '';
                     $nivel = isset($_POST['nivel']) ? $_POST['nivel'] : ''; */
 
-                    include_once './conexao.php';
+                    include "./conexao.php";
 
                     $query = "SELECT * FROM usuario WHERE nome like '$nome%'";
                            // . " OR dataNascimento like '%$dataNascimento%' OR dataConvesao like '%$dataConversao%' OR dataBatismo = '$dataBatismo' OR sexo = '$sexo' OR estadoCivil = '$estadoCivil' OR bairro = '$bairro' OR estado = '$estado' OR cidade = '$cidade' OR cep = '$cep' OR status = '$status' OR nivel = '$nivel' ";
