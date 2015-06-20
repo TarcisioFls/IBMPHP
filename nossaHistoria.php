@@ -24,9 +24,9 @@ and open the template in the editor.
         <br/>
         <a href="index.php" <span>Pagina Inicial</span></a>    
             <div class="nossahistoria">
- 
-                    <h2 id="nh">Nossa História</h2> </br>
-                
+                <img src="img/nossahistoria.jpg" alt="Smiley face" height="80" width="85%" style="margin-left: 100px;">
+
+                <hr>
                 <p id="texto">Somos um povo que vem de longe, com muitos nomes, de muitas perseguições, de muitas lutas, mas construindo uma bela história de fé, de doutrina e de princípios.</br>
                     Você os conhecerá nos conteúdos dos documentos que disponibilizamos neste Portal.</br>
 
@@ -50,11 +50,12 @@ and open the template in the editor.
                     mediante confissão da sua fé em Jesus Cristo como salvador pessoal. Portanto. Não aceitam e nem praticam o batismo infantil. </br>
                     Realizam seus objetivos comuns pela cooperação voluntária, na forma de associação de Igrejas ou de convenções, como é o caso da Convenção Batista Brasileira.
                 </p>
-                <br/>
-            </div class="img">
-            <div id="img1"><img src="smiley.gif" alt="Smiley face" height="150" width="350" id="alinhar"></div>
-            <div id="img2"><img src="smiley.gif" alt="Smiley face" height="150" width="350" id="alinhar"></div>
-            <div id="img3"><img src="smiley.gif" alt="Smiley face" height="150" width="350" id="alinhar"></div>
+
+            </div>
+                        <hr>
+            <div id="img1"><img src="img/img 1.jpg" alt="Smiley face" height="150" width="350" id="alinhar"></div>
+            <div id="img2"><img src="img/img 2.jpg" alt="Smiley face" height="150" width="350" id="alinhar"></div>
+            <div id="img3"><img src="img/imag 3.jpg" alt="Smiley face" height="150" width="350" id="alinhar"></div>
         </section>>
         <?php
         // put your code here

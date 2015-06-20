@@ -82,13 +82,14 @@ and open the template in the editor.
                                 <div><img src="img/propaganda2.jpg" alt="Thumb" width="171px" height="400"/></div>
                             </div>
                             <div class="corposite"> <!--div corpo do site-->
+                                <hr>
                                 <div class="evento"><!--div eventos-->
                                     <?php include_once './abaevento.php'; ?>
                                 </div>
-                                <!--<hr>-->
+                              <hr>
                                 <div><!--div videos-->
                                     <div class="video">
-                                        <h4 class="h4">Videos</h4>
+                                        <img src="img/videosemdestaque.jpg" alt="Smiley face" height="80" width="85%">
                                         <br/>
                                         <div id="primeirovideo">
                                             <iframe width="342" height="300" src="https://www.youtube.com/embed/4g_h0R7iVXA" frameborder="0" allowfullscreen></iframe>
@@ -102,9 +103,12 @@ and open the template in the editor.
                                         <hr>                                                    
                                     </div>
                                 </div>
-                                <div class="nhd"> <!--div noticias, horario do culto, downloads-->
+                              
+                              <hr>
+                                <div class="nhd">
+                                    <h2>Confira:</h2><!--div noticias, horario do culto, downloads-->
                                     <div class="horariodoculto"> <!--div horário do culto-->
-                                        <h4 class="h4">Hórario dos Cultos</h4>
+                                        <h2>Hórario dos Cultos</h2>
                                         <p> 
                                         <h4>Domingo:</h4>
                                         09:00hs – EBD</br>
@@ -122,31 +126,38 @@ and open the template in the editor.
                                     </div>  <!--fim div horário do culto-->
 
                                     <div class="downloads"> <!--div downloads-->
-                                        <h4 class="h4">Downloads</h4>
+                                        <h2>Downloads</h2>
+                                        <h5>Conheça POD, uma banda gospel americano!</h5>
 
-                                        <a href="#" class="link">Boletim </a><br/>
-                                        <a href="#" class="link">Músicas</a></p>
+                                        <a href="multimidia/POD - Alive.rar">Alive</a><br/>
+                                        <a href="multimidia/POD - Youth Of The Nation.rar">Youth of the nation</a></p>
 
                                     </div> <!--fim div downloads-->
 
-                                    <div class="noticias"> <!--div notícias-->
-                                        <h4 class="h4">Noticias</h4>
-                                        - Sábado 18 de Abril de 2015 não haverá culto Jovem.<br/> - No Próximo sábado 25 voltaremos as atividades normais.</p>
+                                    <div  class="noticias"> <!--div notícias-->
+                                        <h2>Noticias</h2>
+                                        <p style="text-align:left;"> - Sábado 18 de Abril de 2015 não haverá culto Jovem.<br/> 
+                                            - No Próximo sábado 25 voltaremos as atividades normais.<br/>
+                                            - As obras na nossa Igreja estão quase terminando!<br/>
+                                            - Estamos vendendo trufa para arrecadar verba para a construção da nossa creche!<br/>
+                                            Procurar Gabriela.<br/>
+                                            - </p>
                                     </div>  <!--fim div noticias-->		
                                 </div>  <!--fim div noticias, horario do culto, downloads-->
                                 <hr>
                                 <div class="projetos"> <!--div projetos-->
+                                    <img src="img/nossosprojetos1.jpg" alt="Smiley face" height=80" width="100%" >
                                     <div class="projeto1">
-                                        <h4>Culto Jovem</h4>
+                                        <h3>Culto Jovem</h3>
                                         <div class="photo">
-                                            <a href="#approach"><img src="img/portfolio1.jpg" alt="Thumb" width="171px" height="100"/></a>
+                                            <a href="#approach"><img src="img/portfolio1.jpg" alt="Thumb" width="200px" height="140"/></a>
                                         </div>
                                         <p class="P_GERAL">Eu vos escrevi, jovens, porque sois fortes, e a palavra de Deus está em vós, e já vencestes o maligno.(1 João 2:14)<br/>Culto Todos os Domingos às 09h00 </p>
                                     </div>
                                     <div class="projeto2" class="nossahistoria">
-                                        <h4 id="nh">Escola Bíblica (EBD)</h4>
+                                        <h3 id="nh">Escola Bíblica (EBD)</h3>
                                         <div class="photo">
-                                            <a href="#methods"><img src="img/portfolio2.jpg" alt="Thumb" width="180px" height="100"/></a>
+                                            <a href="#methods"><img src="img/portfolio2.jpg" alt="Thumb" width="200px" height="140"/></a>
                                         </div>
                                         <p class="P_GERAL" id="texto">Bem-aventurado o homem que não anda segundo o conselho dos ímpios, nem se detém no caminho dos pecadores, 
                                             nem se assenta na roda dos escarnecedores.
@@ -154,9 +165,9 @@ and open the template in the editor.
                                         <p class="more"><a href="#"> &nbsp </a></p>
                                     </div>
                                     <div class="projeto3">
-                                        <h4>Culto de Oração</h4>
+                                        <h3>Culto de Oração</h3>
                                         <div class="photo">
-                                            <a href="#results"><img src="portfolio3.pjg" alt="Thumb" width="171px" height="100"/></a>
+                                            <a href="#results"><img src="img/portfolio3.pjg" alt="Thumb" width="200px" height="140"/></a>
                                         </div>
                                         <p class="P_GERAL">“Vinde, adoremos e prostremo-nos; ajoelhemo-nos diante do Senhor, que nos criou” (Sl 95.6)<br/> Cultos todas as Quartas feiras às 19h00</p>
                                         <p class="more"><a href="#"> &nbsp </a></p>

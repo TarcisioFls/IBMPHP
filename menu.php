@@ -16,7 +16,7 @@
     <!-- Logo -->
     <div class="nav navbar-default">
         <a href="index.php"> <img src="img/logo_igreja.png" alt="logo" height="170" class="nav navbar-nav"> </a>
-        <h1 id="textohome">1ª Igreja Batista em Muribeca</h1><br/>
+        <h1 style="color: white;text-align: center;">1ª Igreja Batista em Muribeca</h1><br/>
 		
     </div>
     <!-- Menu -->

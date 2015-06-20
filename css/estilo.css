@@ -14,6 +14,18 @@ and open the template in the editor.
  #texto{
      text-align: center;
  }
+ .liderança{
+         
+    border-left-style: solid;
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    margin-left: 300px;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    margin-right:300px;
+
+ }
  
  .nossahistoria{
      margin-top: 20px;
@@ -221,13 +233,7 @@ body{
     margin-right: auto;
 	text-align: center;
 	}
-.h4{
-	text-align: center;
-	color:#000000;
-	font:arial;
-	font-size:20px
 
-}
 
 .DiaCulto_h6{
 	color:#000000;
@@ -324,23 +330,26 @@ body{
 	}
 	.projetos{
 		width: 100%;
+
 	}
 	.projeto1{
 		width: 33%;
 		float: left;
                 text-align: center;
+
 	}
 	.projeto2{
 		width: 33%;
 		float: left;
                 text-align: center;
-                
-    border-left-style: solid;
+                    border-left-style: solid;
     border-top-style: dotted;
     border-right-style: solid;
     border-bottom-style: dotted;
     border-top:solid transparent;
     border-bottom:solid transparent;
+                
+
 
 
 	}
@@ -348,6 +357,7 @@ body{
 		width: 34%;
 		float: right;
                 text-align: center;
+
 	}
 /* fim css novo do index*/
 

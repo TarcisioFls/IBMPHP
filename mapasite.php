@@ -6,7 +6,7 @@
             <a href="lideranca.php" class="link">Liderança</a></br>
             <a href="missaoValor.php" class="link">Missão e Visão</a></br>
         </div>
-        <div id="lado2" id="m"><h4>Nosso Mapa</h4> 
+        <div id="lado2" id="m"><h4>Para facilitar, nosso Mapa</h4> 
             <a href="eventos.php" class="link">Eventos</a> </br>
             <a href="formulario.php" class="link">Cadastro</a></br>
         <a href="#top" class="link">Download</a></br>
