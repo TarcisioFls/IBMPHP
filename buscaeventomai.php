@@ -103,13 +103,14 @@ and open the template in the editor.
                                             <button title ='Comparecer' type='button' class='btn btn-default' aria-label='Left Align'><span class='glyphicon glyphicon-sunglasses' aria-hidden='true'".$query3['ir']."></span></span><span> 0</span></button>
                                         </td>
                                     </tr>
-                            </div>
+
                             </table>
-                            <hr>
+
                             ";
                             
                         }    
                     ?>
+                                                </div>
             </section>
 
         </form>

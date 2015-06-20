@@ -85,7 +85,7 @@ and open the template in the editor.
                                 <div class="evento"><!--div eventos-->
                                     <?php include_once './abaevento.php'; ?>
                                 </div>
-                                <hr>
+                                <!--<hr>-->
                                 <div><!--div videos-->
                                     <div class="video">
                                         <h4 class="h4">Videos</h4>

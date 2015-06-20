@@ -1,69 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
 
- <br/> 
-<ul class="nav nav-pills">
-    <li role="presentation"><a data-toggle="tab" href="#1" id="jan">Janeiro</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#2" id="fev">Fevereiro</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#3" id="mar">Março</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#4" id="abr">Abril</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#5" id="mai">Maio</a></li>
-    <li role="presentation" class="active"><a data-toggle="tab" href="#6" id="jun">Junho</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#7" id="jul">Julho</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#8" id="ago">Agosto</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#9" id="set">Setembro</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#10" id="out">Outubro</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#11" id="nov">Novembro</a></li>
-    <li role="presentation"><a data-toggle="tab" href="#12" id="dez">Dezembro</a></li>
-</ul>
- <hr>
-        
-        <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade" id="1" aria-labelledby="jan">
-                <h3>Mês de Janeiro</h3>
-                <?php include_once './buscaevento.php'; ?>       
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="2" aria-labelledby="fev">
-                <h3>Mês de Fevereiro</h3>
-                <?php include_once './buscaeventofev.php'; ?>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="3" aria-labelledby="mar">
-                <h3>Mês de Março</h3>
-                <?php include_once './buscaeventomar.php'; ?>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="4" aria-labelledby="abr">
-                <h3>Mês de Abril</h3>
-                <?php include_once './buscaeventoabr.php'; ?>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="5" aria-labelledby="mai">
-                <h3>Mês de Maio</h3>
-                <?php include_once './buscaeventomai.php'; ?>
-            </div>
-            <div role="tabpanel" class="tab-pane in active" id="6" aria-labelledby="jun">
-                <h3>Mês de Junho</h3>
-                <?php include_once './buscaeventojun.php'; ?>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="7" aria-labelledby="jul">
-                <h3>Mês de Julho</h3>
-                <?php include_once './buscaeventojul.php'; ?>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="8" aria-labelledby="ago">
-                <h3>Mês de Agosto</h3>
-                <?php include_once './buscaeventoago.php'; ?>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="9" aria-labelledby="set">
-                <h3>Mês de Setembro</h3>
-                <?php include_once './buscaeventoset.php'; ?>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="10" aria-labelledby="out">
-                <h3>Mes de Outubro</h3>
-                <?php include_once './buscaeventoout.php'; ?>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="11" aria-labelledby="nov">
-                <h3>Mês de Novembro</h3>
-                <?php include_once './buscaeventonov.php'; ?>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="12" aria-labelledby="dez">
-                <h3>Mês de Dezembro</h3>
-                <?php include_once './buscaeventodez.php'; ?>
-            </div>
-        </div>
-  
+    <div class="tababble">
+<div class="container">
+  <h2>Nossos Eventos!</h2>
+  <ul class="nav nav-tabs">
+    <li><a data-toggle="tab" href="#janeiro">janeiro</a></li>
+    <li><a data-toggle="tab" href="#fevereiro">fevereiro</a></li>
+    <li><a data-toggle="tab" href="#março">março</a></li>
+    <li><a data-toggle="tab" href="#abril">abril</a></li>
+    <li><a data-toggle="tab" href="#maio">maio</a></li>
+    <li class="active"><a data-toggle="tab" href="#junho">junho</a></li>
+    <li><a data-toggle="tab" href="#julho">junho</a></li>
+    <li><a data-toggle="tab" href="#agosto">agosto</a></li>
+    <li><a data-toggle="tab" href="#setembro">setembro</a></li>
+    <li><a data-toggle="tab" href="#outubro">outubro</a></li>
+    <li><a data-toggle="tab" href="#novembroi">novembro</a></li>
+    <li><a data-toggle="tab" href="#dezembro">dezembro</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="janeiro" class="tab-pane fade">
+      <h3>evento janeiro</h3>
+
+<?php include_once 'buscaevento.php' ?>
+
+    </div>
+
+    <div id="fevereiro" class="tab-pane fade">
+      <h3>evento fevereiro</h3>
+      <?php include_once 'buscaeventofev.php' ?>
+
+    </div>
+
+    <div id="março" class="tab-pane fade">
+      <h3>evento março</h3>
+            <?php include_once 'buscaeventomar.php' ?>
+    </div>
+
+   <div id="abril" class="tab-pane fade">
+      <h3>evento abril</h3>
+ <?php include_once 'buscaeventoabr.php' ?>
+    </div>
+
+    <div id="maio" class="tab-pane fade">
+      <h3>evento maio</h3>
+<?php include_once 'buscaeventomai.php' ?>
+</script>
+    </div>
+
+    <div id="junho" class="tab-pane fade in active">
+      <h3>evento junho</h3>
+<?php include_once 'buscaeventojun.php' ?>"
+    </div>
+    <div id="julho" class="tab-pane fade">
+      <h3>evento julho</h3>
+<?php include_once 'buscaeventojul.php' ?>
+    </div>
+    
+
+    <div id="agosto" class="tab-pane fade">
+      <h3>evento agosto</h3>
+<?php include_once 'buscaeventoago.php' ?>
+
+    </div>
+
+    <div id="setembro" class="tab-pane fade">
+      <h3>evento setembro</h3>
+<?php include_once 'buscaeventoset.php' ?>"
+    </div>
+      
+    <div id="outubro" class="tab-pane fade">
+      <h3>evento outubro</h3>
+<?php include_once 'buscaeventoout.php' ?>
+    </div>
+
+    <div id="novembro" class="tab-pane fade">
+      <h3>evento novembro</h3>
+<?php include_once 'buscaeventonov.php' ?>
+    </div>
+
+    <div id="dezembro" class="tab-pane fade">
+      <h3>evento dezembro</h3>
+<?php include_once 'buscaeventodez.php' ?>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
