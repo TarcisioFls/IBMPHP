@@ -4,10 +4,15 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/XAMPP/htdocs/IBMPHP/atualizarMembro.php</file>
+            <file>file:/C:/XAMPP/htdocs/IBMPHP/cadastroMembro2.php</file>
+            <file>file:/C:/XAMPP/htdocs/IBMPHP/menu.php</file>
+            <file>file:/C:/XAMPP/htdocs/IBMPHP/js/bootstrap.min.js</file>
+            <file>file:/C:/XAMPP/htdocs/IBMPHP/delete.php</file>
+            <file>file:/C:/XAMPP/htdocs/IBMPHP/js/jquery-2.1.3.js</file>
             <file>file:/C:/XAMPP/htdocs/IBMPHP/conexao.php</file>
+            <file>file:/C:/XAMPP/htdocs/IBMPHP/index.php</file>
             <file>file:/C:/XAMPP/htdocs/IBMPHP/formulario.php</file>
-            <file>file:/C:/XAMPP/htdocs/IBMPHP/cadastroMembro.php</file>
-            <file>file:/C:/XAMPP/htdocs/IBMPHP/buscarMembro.php</file>
+            <file>file:/C:/XAMPP/htdocs/IBMPHP/apagandoMembro.php</file>
         </group>
     </open-files>
 </project-private>

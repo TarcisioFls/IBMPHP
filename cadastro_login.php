@@ -34,7 +34,7 @@
                         
                          <tr>
                             <td>
-                                <input required="required"  class="form-control" name="login" type="text" id="login" size="40" maxlength="200" placeholder="Loin">
+                                <input required="required"  class="form-control" name="login" type="text" id="login" size="40" maxlength="200" placeholder="Login">
                             </td>
                             <th class="corAsteristico">*<th>
                          </tr>

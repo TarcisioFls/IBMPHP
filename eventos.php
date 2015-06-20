@@ -26,7 +26,7 @@ and open the template in the editor.
                                  this.reset();
                              });
                              $("#teste").html('<div class="alert alert-success"><button type="button" class="close" \n\
-                                 data-dismiss="alert">×</button><h4>Sucesso!</h4>Atualização Realizada com sucesso</div>');
+                                 data-dismiss="alert">×</button><h4>Sucesso!</h4>Cadastro Realizado com sucesso</div>');
                              $("#nome").focus();    
                         }
                         else {

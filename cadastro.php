@@ -18,9 +18,10 @@ if($login == "") {
 } else {
 	// se o usuario digitou o login ele verifica
 	// se esta disponivel
-	$consulta = mysql_query("select * from dados_usuarios where Login = '$login'");
-	$linha = mysql_num_rows($consulta);
-	if($linha != 0) {
+        $result = "select * from dados_usuarios where Login = '$login'";
+	$consulta = mysqli_query($conn, $result);
+	$linha = mysqli_num_rows($consulta);
+	if($linha != true) {
 		echo "O nome de usuario que você<br>
 			  Digitou já existe tente outro!";
 		exit;

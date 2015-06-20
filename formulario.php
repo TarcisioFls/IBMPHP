@@ -12,33 +12,34 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/jquery-2.1.3.js"></script>
         <script src="js/bootstrap.min.js"></script>
+            
         
         <script>
-            $(function(){
-               $('#form').submit(function(){
-                  $.ajax({
-                     url: 'cadastroMembro2.php',
-                     type: 'POST',
-                     data: $('#form').serialize(),
-                     success: function(result){
-                         if(result == "Sucesso") {
-                         $("#form").each(function () {
-                             this.reset();
-                         });
-                         $("#teste").html('<div class="alert alert-success"><button type="button" class="close" \n\
-                             data-dismiss="alert">×</button><h4>Sucesso!</h4>Atualização Realizada com sucesso</div>');
-                         $("#nome").focus();    
+            $(function (){
+                $("#form").submit(function (){
+                    $.ajax({
+                        url: "cadastroMembro2.php",
+                        type: "POST",
+                        data: $("#form").serialize(),
+                        success: function (result) {
+                            if(result == "Sucesso") {
+                                $("#form").each(function () {
+                                this.reset();
+                            });
+                            $("#teste").html('<div class="alert alert-success"><button type="button" class="close" \n\
+                                data-dismiss="alert">×</button><h4>Sucesso!</h4>Atualização Realizada com sucesso</div>');
+                            }
+                            else {
+                                $("#teste").html('<div class="alert alert-error"><button type="button" class="close" \n\
+                                data-dismiss="alert">×</button><h4>Falha!</h4>Cadastro não efetuado. Por favor tentar novamente!</div>');
+                            }
                         }
-                        else {
-                            $("#teste").html('<div class="alert alert-error"><button type="button" class="close" \n\
-                                 data-dismiss="alert">×</button><h4>Falha!</h4>Cadastro não efetuado. Por favor tentar novamente!</div>');
-                        }
-                     }
-                  });
-                  return false;
-               }); 
+                    });
+                    return false;
+                });
             });
         </script>
+        
     </head>
     <body>
         <?php
@@ -59,16 +60,16 @@ and open the template in the editor.
                             <td>
                                 <input type="text" name="nome" id="nome" required="required" class="form-control2">
                             </td>
-			    <th class="corAsteristico">*<th>
+			    
                         </tr>
                         <tr>
                             <td>
-                                <label for="nomePai">Nome do pai</label>                    
+                                <label for="nomePai">Nome do Pai</label>                    
                             </td>
                             <td>
                                 <input type="text" name="nomePai" id="nomePai" required="required" class="form-control2">
                             </td>	
-							<th class="corAsteristico">*<th>							
+							
                         </tr>
                         <tr>
                             <td>
@@ -77,7 +78,7 @@ and open the template in the editor.
                             <td>
                                 <input type="text" name="nomeMae" id="nomeMae" required="required" class="form-control2">
                             </td>
-							<th class="corAsteristico">*<th>
+							
                         </tr>
                         <tr>
                             <td>
@@ -86,7 +87,7 @@ and open the template in the editor.
                             <td>
                                 <input type="date" name="dataNascimento" id="dataNascimento" required="required" class="form-control2">
                             </td>
-							<th class="corAsteristico">*<th>
+							
                         </tr>
                         <tr>
                             <td>
@@ -95,7 +96,7 @@ and open the template in the editor.
                             <td>
                                 <input type="date" name="dataConversao" id="dataConversao" required="required" class="form-control2">
                             </td>
-							<th class="corAsteristico">*<th>
+							
                         </tr>
                         <tr>
                             <td>
@@ -116,7 +117,7 @@ and open the template in the editor.
                                     <option value="Masculino" label="Masculino"></option>
                                 </select>
                             </td>
-							<th class="corAsteristico">*<th>
+							
                         </tr>
                         <tr>
                             <td>
@@ -131,7 +132,7 @@ and open the template in the editor.
                                     <option value="Viúvo(a)" label="Viúvo(a)"></option>
                                 </select>
                             </td>
-							<th class="corAsteristico">*<th>
+							
                         </tr>
 						<tr>
                             <td>
@@ -162,7 +163,7 @@ and open the template in the editor.
                                 <label for="cpf" >CPF</label>
                             </td>
                             <td>
-                                <input onkeypress="return MascaraNumerica()" type="text" name="cpf" id="cpf" class="form-control2">
+                                <input  type="text" name="cpf" id="cpf" class="form-control2">
                             </td>
                         </tr>
                     </table>
@@ -177,7 +178,7 @@ and open the template in the editor.
                             <td>
                                 <input type="text" name="rua" id="rua" required="required" class="form-control2">
                             </td>
-							<th class="corAsteristico">*<th>
+							
                         </tr>
 						<tr>
 							<td>
@@ -186,7 +187,7 @@ and open the template in the editor.
                             <td>
                                 <input type="text" name="numero" id="numero" class="form-control2">
                             </td>
-							<th class="corAsteristico">*<th>
+							
 						</tr>
                         <tr>
                             <td>
@@ -195,7 +196,7 @@ and open the template in the editor.
                             <td>
                                 <input type="text" name="bairro" id="bairro" class="form-control2">
                             </td>
-							<th class="corAsteristico">*<th>
+							
                         </tr>
                         <tr>
                             <td>
@@ -233,7 +234,7 @@ and open the template in the editor.
                                     <option value="Tocantins" label="Tocantins"></option>
                                 </select>
                             </td>
-							<th class="corAsteristico">*<th>
+							
                         </tr>
                         <tr>
                             <td>
@@ -242,7 +243,7 @@ and open the template in the editor.
                             <td>
                                 <input type="text" name="cidade" id="cidade" class="form-control2">
                             </td>
-							<th class="corAsteristico">*<th>
+							
                         </tr>
                         <tr>
                             <td>
@@ -260,19 +261,14 @@ and open the template in the editor.
                             <td>
                                 <input type="text" name="referencia" id="referencia" required="required" class="form-control2">
                             </td>
-							<th class="corAsteristico">*<th>
+							
                         </tr>
                     </table>
                 </div>
                 <h3>Dados do Perfil</h3>
                     <div  class="panel panel-default2">
                     <table class="table-condensed">
-                        <tr>
-                        <label for="imagem"> Imagem do Membro </label>
-                        </tr>
-                        <tr>
-                        <input type="file" id="imagem">
-                        </tr>
+                        
                         <tr>
                             <td>
                                 <label for="status">Status</label>
@@ -287,7 +283,7 @@ and open the template in the editor.
                                     <option value="Falecido" label="falecido"></option>
                                 </select>
                             </td>
-							<th class="corAsteristico">*<th>
+							
                         </tr>
                         <tr>
                             <td>
@@ -302,7 +298,7 @@ and open the template in the editor.
                                     <option value="Pastor" label="Pastor"></option>                                    
                                 </select>
                             </td>
-							<th class="corAsteristico">*<th>
+							
                         </tr>
                     </table>
                 </div>
@@ -316,7 +312,7 @@ and open the template in the editor.
                             <td>
                                 <input type="text" name="fone1" id="fone1" class="form-control2">
                             </td>
-							<th class="corAsteristico">*<th>
+							
                         </tr>
                         <tr>
                             <td>
@@ -333,7 +329,7 @@ and open the template in the editor.
                             <td>
                                 <input type="email" name="email" id="email" class="form-control2">
                             </td>
-							<th class="corAsteristico">*<th>
+							
                         </tr>
                     </table>
                     </div>

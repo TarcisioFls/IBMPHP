@@ -1,4 +1,4 @@
-<?include "./conexao.php";?>
+<!--<?include "./conexao.php";?>
 <html>
 <header>
 <style>
@@ -11,7 +11,7 @@
 
 </style>
 </header>
-<html>
+<html>-->
 <section>
     <!-- Logo -->
     <div class="nav navbar-default">
@@ -49,7 +49,7 @@
         </div>
     </nav>            
 </section>    
-</body>
-</html>
+<!--</body>
+</html>-->
         
 

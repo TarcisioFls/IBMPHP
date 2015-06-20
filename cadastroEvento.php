@@ -1,7 +1,4 @@
 <?php
-
-    require './eventos.php';
-    
     ini_set('default_charset','UTF-8');
     
     $nome = isset($_POST['nome']) ? $_POST['nome'] : '';
@@ -14,6 +11,7 @@
     $descricao = isset($_POST['descricao']) ? $_POST['descricao'] : '';
     
     if (!empty($nome)){
+        
     include './conexao.php';
     
     $query = "INSERT INTO evento(nome, dataInicio, dataTerminio, horaInicio, horaTermino, grupo, local, descricao) VALUES ('$nome', '$dataInicio', '$dataTerminio', '$horaInicio', '$horaTermino', '$grupo', '$local', '$descricao')";
